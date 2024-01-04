@@ -10,24 +10,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // final FakeAuthService authService =
-    //     Get.put(FakeAuthService()); // AuthService'ı buradan alabilirsiniz
 
-// Belirli bir kullanıcı rolü seçin
-    // ///[provider ise hizmet veren consumer ise hizmet alan tarafı açılacak]
-    // String selectedUserRole = "consumer";
-
-    // // Seçili kullanıcının tipini kontrol et
-    // bool isServiceProvider =
-    //     authService.isUserServiceProvider(selectedUserRole);
-
-    // Widget initialPage;
-    // if (isServiceProvider) {
-    //   initialPage =
-    //       GlobalBottomNavigationBar(); // Hizmet veren kullanıcı için sayfa
-    // } else {
-    //   initialPage = CustomerNavigation();
-    // }
     return ScreenUtilInit(
         designSize: const Size(390, 844),
         minTextAdapt: true,
