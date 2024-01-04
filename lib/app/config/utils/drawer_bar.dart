@@ -80,7 +80,7 @@ class DrawerBar extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.supervised_user_circle_rounded,
-                    color: Colors.white,
+                    color: const Color.fromARGB(255, 176, 104, 104),
                   ),
                   title: Text(
                     AppConstants.communication,
