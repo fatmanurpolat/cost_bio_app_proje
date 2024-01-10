@@ -10,7 +10,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: AppColors.kremColor,
+      backgroundColor: AppColors.white,
       elevation: 0,
       leading: Builder(
         builder: (context) => IconButton(
@@ -27,15 +27,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       actions: <Widget>[
-        /* Arama İkonu
-        * IconButton(
-          icon: const Icon(Icons.search, color: Colors.black),
-          onPressed: () {
-            print('Arama butonuna basıldı');
-          },
-        ),
-         */
-
         GestureDetector(
           onTap: () {
             print('Resme tıklandı');
@@ -45,6 +36,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Image.asset(AppConstants.logoAssetsPath.whiteLogo,
                 color: Colors.red.shade900),
           ),
+        ),
+        IconButton(
+          icon: const Icon(Icons.search, color: Colors.black),
+          onPressed: () {
+            print('Arama butonuna basıldı');
+          },
         ),
       ],
     );
