@@ -1,3 +1,4 @@
+import 'package:cost_boi_proje/app/controllers/auth/login/login_controller.dart';
 import 'package:cost_boi_proje/app/views/modules/auth/login/login_screen.dart';
 import 'package:cost_boi_proje/app/views/modules/mission/menus/home_page.dart';
 import 'package:cost_boi_proje/app/views/modules/about_us/about_page.dart';
@@ -41,7 +42,7 @@ class AppRoutes {
     GetPage(name: splash, page: () => SplashScreen()),
 
      GetPage(name: login
-, page: () => LoginScreen()),
+, page: () => LoginScreen(controller: LoginPageController())),
 
   ];
 }

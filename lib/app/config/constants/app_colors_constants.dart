@@ -5,7 +5,7 @@ class AppColors {
   static Color mainGrey = HexColor("0A4431");
   static Color deepGrey = HexColor("071C15");
 
-  static Color errorRed = HexColor("ff0000");
+  static Color errorRed = HexColor("b44000");
   static Color black = HexColor("000000");
   static Color pageBackgroundColor = HexColor("F2F1EB");
   static Color greyColor = HexColor("A1BABA");
