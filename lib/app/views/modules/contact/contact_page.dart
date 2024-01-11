@@ -44,7 +44,7 @@ class _ContactPage extends State<ContactPage> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
-                              Icon(Icons.person, color: Colors.red.shade900),
+                              Icon(Icons.person, color: AppColors.darkPurple),
                               const Text('COORDINATOR',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -65,7 +65,7 @@ class _ContactPage extends State<ContactPage> {
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: <Widget>[
-                                Icon(Icons.email, color: Colors.red.shade900),
+                                Icon(Icons.email, color: AppColors.darkPurple),
                                 const Text('EMAIL',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -89,7 +89,7 @@ class _ContactPage extends State<ContactPage> {
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: <Widget>[
-                                Icon(Icons.map, color: Colors.red.shade900),
+                                Icon(Icons.map, color: AppColors.darkPurple),
                                 const Text('ADDRESS',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -139,8 +139,9 @@ class _ContactPage extends State<ContactPage> {
                 ),
                 CustomElevatedButton(
                   text: "Send",
+                  textColor: AppColors.white,
                   onPressed: () {},
-                  backColor: AppColors.greyColor,
+                  backColor: AppColors.darkPurple,
                 )
               ],
             ),

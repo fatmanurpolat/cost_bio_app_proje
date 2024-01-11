@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset(
               AppConstants.logoAssetsPath.whiteLogo,
-              color: Colors.red.shade900,
+              color: AppColors.darkPurple,
               width: MediaQuery.of(context).size.width * 0.5,
             ),
             const SizedBox(
@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 100,
             ),
             SpinKitChasingDots(
-              color: Colors.red.shade900,
+              color: AppColors.darkPurple,
               size: 30.0,
             ),
           ],

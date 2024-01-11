@@ -2,7 +2,6 @@ import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:cost_boi_proje/app/config/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-
 class CustomElevatedButton extends StatefulWidget {
   final String text;
   final VoidCallback onPressed;
@@ -58,8 +57,8 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
           decoration: BoxDecoration(
             color: backColor, // Güncelle
             borderRadius: BorderRadius.circular(16),
-            border:
-                Border.all(color: isPressed ? Colors.black : Colors.transparent),
+            border: Border.all(
+                color: isPressed ? AppColors.darkPurple : Colors.transparent),
           ),
           child: Padding(
             padding: const EdgeInsets.all(12.0),

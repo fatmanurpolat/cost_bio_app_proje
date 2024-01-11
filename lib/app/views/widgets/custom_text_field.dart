@@ -2,7 +2,6 @@ import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:cost_boi_proje/app/config/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-
 class CustomTextFormField extends StatelessWidget {
   final TextEditingController? controller;
   final bool? obscureText;
@@ -38,23 +37,24 @@ class CustomTextFormField extends StatelessWidget {
         obscureText: obscureText ?? false,
         validator: validator,
         maxLines: maxLines,
-        decoration: InputDecoration( hintStyle: AppFonts.caption(),
+        decoration: InputDecoration(
+          hintStyle: AppFonts.caption(),
           suffixIcon: suffixIcon,
           hintText: hintText,
-          fillColor: AppColors.pageBackgroundColor,
+          fillColor: AppColors.white,
           filled: true,
           border: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.mainGrey),
+            borderSide: BorderSide(color: AppColors.lilac),
             borderRadius: const BorderRadius.all(Radius.circular(20.0)),
           ),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.white),
+            borderSide: BorderSide(color: AppColors.lilac),
             borderRadius: const BorderRadius.all(
               Radius.circular(20.0),
             ),
           ),
           errorBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.errorRed),
+            borderSide: BorderSide(color: AppColors.darkPurple),
             borderRadius: const BorderRadius.all(
               Radius.circular(20.0),
             ),

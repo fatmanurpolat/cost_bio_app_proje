@@ -10,7 +10,7 @@ class DrawerBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Colors.red.shade900,
+      backgroundColor: AppColors.darkPurple,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

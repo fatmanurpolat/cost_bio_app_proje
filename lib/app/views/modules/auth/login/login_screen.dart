@@ -22,7 +22,8 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.white,
+          height: height,
+          color: AppColors.darkPurple,
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -34,27 +35,28 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: Image.asset(
                     AppConstants.logoAssetsPath.whiteLogo,
-                    color: AppColors.errorRed,
+                    color: AppColors.darkPurple,
                     width: width * 0.5,
-                    height: height * 0.4,
+                    height: height * 0.3,
                   ),
                 ),
+                SizedBox(height: height * 0.05),
                 Text(
-                  "Welcome to News!",
-                  style: AppFonts.caption(),
+                  AppConstants.welcomeDescription,
+                  style: AppFonts.texts(color: AppColors.white, fontSize: 25),
                 ),
                 SizedBox(
                   height: height * 0.05,
                 ),
                 CustomTextFormField(
                   controller: controller.emailController,
-                  hintText: "Email",
+                  hintText: AppConstants.mail,
                 ),
                 const SizedBox(height: 5),
                 CustomTextFormField(
                   // validator: (value) => value?.validatePassword(value),
                   controller: controller.passwordController,
-                  hintText: "Password",
+                  hintText: AppConstants.passwordText,
                   obscureText: !controller.isPasswordVisible.value,
                   suffixIcon: IconButton(
                     onPressed: () {
@@ -68,7 +70,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 CustomElevatedButton(
-                  backColor: Colors.red.shade900,
+                  backColor: AppColors.lilac,
                   textColor: AppColors.white,
                   onPressed: () {
                     Get.toNamed(AppRoutes.home);
@@ -76,7 +78,12 @@ class LoginScreen extends StatelessWidget {
                   text: AppConstants.loginButtonText,
                 ),
                 GestureDetector(
-                  child: const Text("Forgot Password"),
+                  child: Text(
+                    AppConstants.forgotPassword,
+                    style: AppFonts.texts(
+                      color: AppColors.white,
+                    ),
+                  ),
                   onTap: () {
                     // Get.toNamed(AppRoutes.passangerLogin);
                   },

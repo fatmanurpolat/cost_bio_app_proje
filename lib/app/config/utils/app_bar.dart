@@ -10,15 +10,27 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: AppColors.white,
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.darkPurple,
+              AppColors.lilac,
+              AppColors.blueBabe,
+            ], // İki farklı renk
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+      ),
       elevation: 0,
       leading: Builder(
         builder: (context) => IconButton(
-          icon: const Padding(
+          icon: Padding(
             padding: EdgeInsets.only(left: 12.0),
             child: Icon(
               Icons.menu,
-              color: Colors.black,
+              color: AppColors.darkPurple,
             ),
           ),
           onPressed: () {
@@ -34,11 +46,11 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: Padding(
             padding: EdgeInsets.all(10.0),
             child: Image.asset(AppConstants.logoAssetsPath.whiteLogo,
-                color: Colors.red.shade900),
+                color: AppColors.darkPurple),
           ),
         ),
         IconButton(
-          icon: const Icon(Icons.search, color: Colors.black),
+          icon: Icon(Icons.search, color: AppColors.darkPurple),
           onPressed: () {
             print('Arama butonuna basıldı');
           },
