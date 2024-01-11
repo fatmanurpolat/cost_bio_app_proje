@@ -29,7 +29,7 @@ class _NewsPageState extends State<NewsPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.kremColor, width: 3),
+                    border: Border.all(color: AppColors.lilac, width: 3),
                     borderRadius: BorderRadius.circular(15),
                     // color: AppColors.kremColor,
                   ),
@@ -45,7 +45,7 @@ class _NewsPageState extends State<NewsPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.kremColor, width: 3),
+                    border: Border.all(color: AppColors.lilac, width: 3),
                     borderRadius: BorderRadius.circular(15),
                     // color: AppColors.kremColor,
                   ),
@@ -61,7 +61,7 @@ class _NewsPageState extends State<NewsPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.kremColor, width: 3),
+                    border: Border.all(color: AppColors.lilac, width: 3),
                     borderRadius: BorderRadius.circular(15),
                     // color: AppColors.kremColor,
                   ),
@@ -77,7 +77,7 @@ class _NewsPageState extends State<NewsPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.kremColor, width: 3),
+                    border: Border.all(color: AppColors.lilac, width: 3),
                     borderRadius: BorderRadius.circular(15),
                     // color: AppColors.kremColor,
                   ),
@@ -93,7 +93,7 @@ class _NewsPageState extends State<NewsPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(color: AppColors.kremColor, width: 3),
+                    border: Border.all(color: AppColors.lilac, width: 3),
                     borderRadius: BorderRadius.circular(15),
                     // color: AppColors.kremColor,
                   ),

@@ -1,4 +1,5 @@
 
+import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:cost_boi_proje/app/config/utils/app_bar.dart';
 import 'package:cost_boi_proje/app/config/constants/app_text_constants.dart';
 import 'package:cost_boi_proje/app/config/utils/drawer_bar.dart';
@@ -20,7 +21,7 @@ class AboutPage extends StatelessWidget {
             Icon(
               Icons.business, // İstediğiniz bir ikonu burada kullanabilirsiniz
               size: 100,
-              color: Colors.red.shade800, // İkonun rengini ayarlayabilirsiniz
+              color: AppColors.darkPurple, // İkonun rengini ayarlayabilirsiniz
             ),
             SizedBox(height: 20),
             Text(

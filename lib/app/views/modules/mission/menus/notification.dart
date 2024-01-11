@@ -1,3 +1,4 @@
+import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:flutter/material.dart';
 
 class NotificationItem extends StatelessWidget {
@@ -27,7 +28,7 @@ class NotificationItem extends StatelessWidget {
           Icon(
             Icons.notifications, // İstediğiniz bir ikonu kullanabilirsiniz
             size: 20,
-            color: Colors.red.shade900, // İkonun rengini ayarlayabilirsiniz
+            color: AppColors.darkPurple, // İkonun rengini ayarlayabilirsiniz
           ),
           const SizedBox(width: 12), // İkon ile metin arasında boşluk ekleyin
           Expanded(

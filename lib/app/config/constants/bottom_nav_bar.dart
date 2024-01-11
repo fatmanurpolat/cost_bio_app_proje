@@ -1,7 +1,9 @@
+import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:cost_boi_proje/app/config/constants/app_text_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+// ignore: must_be_immutable
 class MyBottomNavBar extends StatelessWidget {
   void Function(int)? onTabChange;
   MyBottomNavBar({super.key, required this.onTabChange});
@@ -9,12 +11,12 @@ class MyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 3),
+      height: MediaQuery.of(context).size.height * 0.1,
       child: GNav(
-        color: Colors.grey.shade500,
-        activeColor: Colors.red.shade900,
-        tabActiveBorder: Border.all(color: Color.fromARGB(255, 186, 109, 109)),
-        tabBackgroundColor: Color.fromARGB(255, 234, 234, 234),
+        color: AppColors.blueBabe,
+        activeColor: AppColors.darkPurple,
+        tabActiveBorder: Border.all(color: AppColors.lilac),
+        tabBackgroundColor: AppColors.lilac,
         mainAxisAlignment: MainAxisAlignment.center,
         tabBorderRadius: 16,
         onTabChange: (value) => onTabChange!(value),
@@ -22,10 +24,16 @@ class MyBottomNavBar extends StatelessWidget {
           GButton(
             icon: Icons.home,
             text: AppConstants.home,
+            iconSize: 20,
+            margin: EdgeInsets.symmetric(
+                vertical: 1,
+                horizontal: 2), // Adjust the margin to reduce the button size
           ),
           GButton(
             icon: Icons.notifications,
             text: AppConstants.notifications,
+            iconSize: 20,
+            margin: EdgeInsets.symmetric(vertical: 1, horizontal: 2),
           ),
         ],
       ),

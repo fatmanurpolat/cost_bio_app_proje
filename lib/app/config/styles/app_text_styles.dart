@@ -26,17 +26,20 @@ class AppFonts {
         color: color,
       );
 
-  static TextStyle texts({Color? color}) => GoogleFonts.aBeeZee(
-        fontSize: 16,
-        fontWeight: FontWeight.w700,
+  static TextStyle texts({Color? color, double? fontSize}) => GoogleFonts.aBeeZee(
+        fontSize: fontSize ?? 15,
+        fontWeight: FontWeight.normal,
         color: color,
       );
 
-  static TextStyle caption({Color? color, FontWeight? fontWeight}) => GoogleFonts.sen(
-        fontSize: 15,
-        fontWeight: fontWeight ?? FontWeight.normal,
-        color: color,
-      );
+  static TextStyle caption({Color? color, bool? underLine, double? fontSize}) =>
+      GoogleFonts.racingSansOne(
+          fontSize: fontSize ?? 15,
+          fontWeight: FontWeight.normal,
+          color: color,
+          decoration: underLine == true
+              ? TextDecoration.underline
+              : TextDecoration.none);
 
   static TextStyle button({Color? color, FontWeight? fontWeight}) =>
       GoogleFonts.barlow(
