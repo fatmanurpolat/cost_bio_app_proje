@@ -1,5 +1,7 @@
 import 'package:cost_boi_proje/app/controllers/auth/login/login_controller.dart';
+import 'package:cost_boi_proje/app/controllers/auth/register/register_controller.dart';
 import 'package:cost_boi_proje/app/views/modules/auth/login/login_screen.dart';
+import 'package:cost_boi_proje/app/views/modules/auth/register/register_screen.dart';
 import 'package:cost_boi_proje/app/views/modules/mission/menus/home_page.dart';
 import 'package:cost_boi_proje/app/views/modules/about_us/about_page.dart';
 import 'package:cost_boi_proje/app/views/modules/communacation/communication_page.dart';
@@ -34,6 +36,9 @@ class AppRoutes {
   static List<GetPage<dynamic>> routes = <GetPage<dynamic>>[
 
     GetPage(name: home, page: () => HomePage()),
+
+    GetPage(name: register, page: () => RegisterScreen(controller: RegisterPageController())),
+
     GetPage(name: about, page: () => AboutPage()),
         GetPage(name: mission, page: () => MissionPage()),
     GetPage(name: resource, page: () => ResourcesPage()),
