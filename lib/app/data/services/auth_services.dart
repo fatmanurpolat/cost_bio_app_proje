@@ -27,7 +27,7 @@ Future<void> signOut() async {
       print('Hata Oluştu: $e');
     }
   }
-  Future<bool> login({required String email, required String password}) async {
+   Future<bool> login({required String email, required String password}) async {
     try {
       var response = await http.post(
         Uri.parse("${ApiConstants.baseUrl}/user/login"),
@@ -35,11 +35,7 @@ Future<void> signOut() async {
           'email': email,
           'password': password,
         }),
-        headers: {
-          'Cookie': '',
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
+     
       );
 
       if (response.statusCode == 200) {
@@ -91,11 +87,7 @@ Future<void> signOut() async {
           'password': password,
      
         }),
-        headers: {
-          'Cookie': '',
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
+      
       );
 
       if (response.statusCode == 201) {

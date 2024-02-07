@@ -2,11 +2,11 @@ class AppConstants {
 /////[ASSETS PATHLERI]
   static const String homepageImages = 'assets/homepage_images/';
   static const String logoAssetsPath = 'assets/logo/';
+  static const String iconAssetsPath = 'assets/icons/';
 
-
+  
   static const String home = "Home";
   static const String about_us = "About Us";
-
 
   ///[REGISTER- KAYIT OL SAYFASI STATİK TEXTLERİ]
   static const String mission = "Mission";
@@ -20,8 +20,9 @@ class AppConstants {
   static const String researchInfo = "researchInfo";
   static const String passwordText = "Parola";
   static const String registerButtonText = "Register";
-  static const String welcomeDescription =
-      "Welcome to News!";
+  static const String welcomeDescription = "Welcome to News!";
+  static const String meetWithTeam =
+      "The INE-CSC Cost Action is a truly trans-national network comprising (currently) 190 members spread across many countries, inlcuding Australia. The Action is chaired Professor Josephine Hegarty from University College Cork (Ireland) and Vice-chaired by Doctor Ewa Pawlowska of the Medical University of Gdansk (Poland).You can contact them via the project email: inecancersurvivorship@ucc.ie. Each of the 4 Working Groups has a dedicated lead to ensure the project aims are achieved. Information and contact details for the INE-CSC Leadership Team can be found at the COST action website";
 
   ///[LOGIN - GİRİŞ YAP SAYFASI STATİK TEXTLERİ]
   ///  static const String loginButtonText = "Giriş Yap";
@@ -35,8 +36,6 @@ class AppConstants {
       "Sıfırlama bağlantısı gönderebilmek için lütfen sistemde kayıtlı bulunan email veya telefon adresinizi yaz.";
   static const String forgotPasswordPageHintText = "Giriniz";
   static const String forgotPasswordPageButtonText = "Şifremi Sıfırla";
-
-
 
   /// NEW PASSWORD - YENİ PAROLA SAYFASI STATİK TEXTLERİ
   static const String newPasswordText1 = "Yeni";
@@ -55,15 +54,10 @@ class AppConstants {
   static const String profilButtonText = "Yeni Ekle";
   static const String profilButtonText2 = "Güncelle";
 
-
-
   ///[NOTIFICATION SCREEN TEXT]
 
   static const String notifications = "Notifications";
   static const String theNotification = " Size bir bildirim gönderdi!";
-
-
-
 
 ////[CONTACT INFO BOTTOM SHEET]
   static const String ok = 'Tamam';
@@ -73,9 +67,4 @@ class AppConstants {
   static const String instagram = 'Instagram';
   static const String linkedin = 'LinkedIn';
   static const String contact = 'Contact';
-
-
-
-
-
 }

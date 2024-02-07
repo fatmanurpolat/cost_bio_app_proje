@@ -12,12 +12,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       flexibleSpace: Container(
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
           gradient: LinearGradient(
             colors: [
               AppColors.darkPurple,
               AppColors.lilac,
               AppColors.blueBabe,
-            ], // İki farklı renk
+            ], // üç farklı renk
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
