@@ -80,7 +80,7 @@ class DrawerBar extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.supervised_user_circle_rounded,
-                    color: const Color.fromARGB(255, 176, 104, 104),
+                    color: AppColors.white,
                   ),
                   title: Text(
                     AppConstants.communication,
@@ -129,8 +129,32 @@ class DrawerBar extends StatelessWidget {
                   },
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(left: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "Profile",
+                    style: AppFonts.texts(
+                      color: AppColors.white,
+                    ),
+                  ),
+                  onTap: () {
+                    Get.toNamed(AppRoutes.login);
+                  },
+                ),
+              ),
             ],
-          )
+          ),
+
+          // ElevatedButton(
+          //     onPressed: () {
+          //       Get.toNamed(AppRoutes.login);
+          //     },
+          //     child: child)
         ],
       ),
     );

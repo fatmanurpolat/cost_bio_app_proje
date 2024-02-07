@@ -16,7 +16,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   nextScreen() async {
     Future.delayed(const Duration(seconds: 2), () async {
-      await Get.offNamedUntil(AppRoutes.login, (route) => false);
+      await Get.offNamedUntil(AppRoutes.home, (route) => false);
+      // await Get.offNamedUntil(AppRoutes.home, (route) => false);
     });
   }
 
@@ -37,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              AppConstants.logoAssetsPath.whiteLogo,
+              AppConstants.logoAssetsPath.splashLogo,
               color: AppColors.darkPurple,
               width: MediaQuery.of(context).size.width * 0.5,
             ),

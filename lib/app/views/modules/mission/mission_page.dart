@@ -1,4 +1,3 @@
-
 import 'package:cost_boi_proje/app/config/constants/app_colors_constants.dart';
 import 'package:cost_boi_proje/app/config/utils/app_bar.dart';
 import 'package:cost_boi_proje/app/config/utils/drawer_bar.dart';
@@ -12,6 +11,7 @@ class MissionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
+      flex: 1,
       child: Scaffold(
         backgroundColor: Colors.grey[150],
         appBar: MyAppBar(),
