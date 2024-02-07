@@ -24,7 +24,8 @@ class _NewsPageState extends State<NewsPage> {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Padding(
-              padding: const EdgeInsets.all(28.0),
+              padding: const EdgeInsets.only(
+                  left: 28.0, right: 28, top: 28, bottom: 40),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -34,8 +35,8 @@ class _NewsPageState extends State<NewsPage> {
                         borderRadius: BorderRadius.circular(20)
                         // color: AppColors.kremColor,
                         ),
-                    width: width * 0.35,
-                    height: height * 0.15,
+                    width: width * 0.25,
+                    height: height * 0.1,
                     child: CircleAvatar(
                         child: Image.asset(
                       AppConstants.iconAssetsPath.iconDigital,
@@ -50,8 +51,8 @@ class _NewsPageState extends State<NewsPage> {
                         borderRadius: BorderRadius.circular(20)
                         // color: AppColors.kremColor,
                         ),
-                    width: width * 0.35,
-                    height: height * 0.15,
+                    width: width * 0.25,
+                    height: height * 0.1,
                     child: CircleAvatar(
                         child: Image.asset(
                       AppConstants.iconAssetsPath.iconSupport,
@@ -66,8 +67,8 @@ class _NewsPageState extends State<NewsPage> {
                         borderRadius: BorderRadius.circular(20)
                         // color: AppColors.kremColor,
                         ),
-                    width: width * 0.35,
-                    height: height * 0.15,
+                    width: width * 0.25,
+                    height: height * 0.1,
                     child: CircleAvatar(
                         child: Image.asset(
                       AppConstants.iconAssetsPath.iconNetwork,
@@ -82,8 +83,8 @@ class _NewsPageState extends State<NewsPage> {
                         borderRadius: BorderRadius.circular(20)
                         // color: AppColors.kremColor,
                         ),
-                    width: width * 0.35,
-                    height: height * 0.15,
+                    width: width * 0.25,
+                    height: height * 0.1,
                     child: CircleAvatar(
                         child: Image.asset(
                       AppConstants.iconAssetsPath.iconScience,
@@ -92,6 +93,10 @@ class _NewsPageState extends State<NewsPage> {
                 ],
               ),
             ),
+          ),
+          Divider(height: 2),
+          SizedBox(
+            height: height * .06,
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -116,17 +121,117 @@ class _NewsPageState extends State<NewsPage> {
                         fit: BoxFit
                             .cover, // Resmi container boyutuna uyacak şekilde ölçekle
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: AppColors.pageBackgroundColor),
-                        child: Text(
-                          "Haber 1",
-                          textAlign: TextAlign.center,
-                          style: AppFonts.caption(
-                            color: AppColors.black,
-                            fontSize: 25,
-                          ),
+                      Text(
+                        "News",
+                        textAlign: TextAlign.center,
+                        style: AppFonts.texts(
+                          color: AppColors.black,
+                          fontSize: 25,
+                        ),
+                      ),
+                      CustomElevatedButton(
+                        text: "Learn More",
+                        onPressed: () {},
+                        backColor: AppColors.darkPurple,
+                        textColor: AppColors.white,
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: AppColors.lilac, width: 3),
+                  ),
+                  width: width * 0.48,
+                  height: height * 0.48,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image.asset(
+                        AppConstants.homepageImages.newsPhoto,
+                        fit: BoxFit
+                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
+                      ),
+                      Text(
+                        "News",
+                        textAlign: TextAlign.center,
+                        style: AppFonts.texts(
+                          color: AppColors.black,
+                          fontSize: 25,
+                        ),
+                      ),
+                      CustomElevatedButton(
+                        text: "Learn More",
+                        onPressed: () {},
+                        backColor: AppColors.darkPurple,
+                        textColor: AppColors.white,
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: AppColors.lilac, width: 3),
+                  ),
+                  width: width * 0.48,
+                  height: height * 0.48,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image.asset(
+                        AppConstants.homepageImages.newsPhoto,
+                        fit: BoxFit
+                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
+                      ),
+                      Text(
+                        "News",
+                        textAlign: TextAlign.center,
+                        style: AppFonts.texts(
+                          color: AppColors.black,
+                          fontSize: 25,
+                        ),
+                      ),
+                      CustomElevatedButton(
+                        text: "Learn More",
+                        onPressed: () {},
+                        backColor: AppColors.darkPurple,
+                        textColor: AppColors.white,
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: AppColors.lilac, width: 3),
+                  ),
+                  width: width * 0.48,
+                  height: height * 0.48,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image.asset(
+                        AppConstants.homepageImages.newsPhoto,
+                        fit: BoxFit
+                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
+                      ),
+                      Text(
+                        "News",
+                        textAlign: TextAlign.center,
+                        style: AppFonts.texts(
+                          color: AppColors.black,
+                          fontSize: 25,
                         ),
                       ),
                       CustomElevatedButton(
@@ -161,9 +266,9 @@ class _NewsPageState extends State<NewsPage> {
                             borderRadius: BorderRadius.circular(15),
                             color: AppColors.pageBackgroundColor),
                         child: Text(
-                          "Haber 1",
+                          "News",
                           textAlign: TextAlign.center,
-                          style: AppFonts.caption(
+                          style: AppFonts.texts(
                             color: AppColors.black,
                             fontSize: 25,
                           ),
@@ -196,137 +301,12 @@ class _NewsPageState extends State<NewsPage> {
                         fit: BoxFit
                             .cover, // Resmi container boyutuna uyacak şekilde ölçekle
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: AppColors.pageBackgroundColor),
-                        child: Text(
-                          "Haber 1",
-                          textAlign: TextAlign.center,
-                          style: AppFonts.caption(
-                            color: AppColors.black,
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                      CustomElevatedButton(
-                        text: "Learn More",
-                        onPressed: () {},
-                        backColor: AppColors.darkPurple,
-                        textColor: AppColors.white,
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    border: Border.all(color: AppColors.lilac, width: 3),
-                  ),
-                  width: width * 0.48,
-                  height: height * 0.48,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Image.asset(
-                        AppConstants.homepageImages.newsPhoto,
-                        fit: BoxFit
-                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: AppColors.pageBackgroundColor),
-                        child: Text(
-                          "Haber 1",
-                          textAlign: TextAlign.center,
-                          style: AppFonts.caption(
-                            color: AppColors.black,
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                      CustomElevatedButton(
-                        text: "Learn More",
-                        onPressed: () {},
-                        backColor: AppColors.darkPurple,
-                        textColor: AppColors.white,
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    border: Border.all(color: AppColors.lilac, width: 3),
-                  ),
-                  width: width * 0.48,
-                  height: height * 0.48,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Image.asset(
-                        AppConstants.homepageImages.newsPhoto,
-                        fit: BoxFit
-                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: AppColors.pageBackgroundColor),
-                        child: Text(
-                          "Haber 1",
-                          textAlign: TextAlign.center,
-                          style: AppFonts.caption(
-                            color: AppColors.black,
-                            fontSize: 25,
-                          ),
-                        ),
-                      ),
-                      CustomElevatedButton(
-                        text: "Learn More",
-                        onPressed: () {},
-                        backColor: AppColors.darkPurple,
-                        textColor: AppColors.white,
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    border: Border.all(color: AppColors.lilac, width: 3),
-                  ),
-                  width: width * 0.48,
-                  height: height * 0.48,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Image.asset(
-                        AppConstants.homepageImages.newsPhoto,
-                        fit: BoxFit
-                            .cover, // Resmi container boyutuna uyacak şekilde ölçekle
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: AppColors.pageBackgroundColor),
-                        child: Text(
-                          "Haber 1",
-                          textAlign: TextAlign.center,
-                          style: AppFonts.caption(
-                            color: AppColors.black,
-                            fontSize: 25,
-                          ),
+                      Text(
+                        "News",
+                        textAlign: TextAlign.center,
+                        style: AppFonts.texts(
+                          color: AppColors.black,
+                          fontSize: 25,
                         ),
                       ),
                       CustomElevatedButton(
@@ -344,19 +324,6 @@ class _NewsPageState extends State<NewsPage> {
           SizedBox(
             height: 20,
           ),
-          // SingleChildScrollView(
-          //   child: Container(
-          //     child: Image.asset(
-          //       AppConstants.homepageImages.european_research,
-          //       fit: BoxFit.cover,
-          //     ),
-          //     width: width * 0.9,
-          //     height: height * 0.2,
-          //     decoration: BoxDecoration(
-          //       borderRadius: BorderRadius.circular(15),
-          //     ),
-          //   ),
-          // )
         ],
       ),
     );
