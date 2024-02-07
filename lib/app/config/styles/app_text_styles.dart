@@ -12,12 +12,13 @@ class AppFonts {
         color: color,
       );
 
-  static TextStyle subtitle({Color? color, double? fontsize, FontWeight? fontWeight}) => GoogleFonts.sen(
+  static TextStyle subtitle(
+          {Color? color, double? fontsize, FontWeight? fontWeight}) =>
+      GoogleFonts.sen(
         fontSize: fontsize ?? 18,
         fontWeight: fontWeight ?? FontWeight.w500,
         letterSpacing: 1.1,
         color: color,
-       
       );
 
   static TextStyle body({Color? color, FontWeight? fontWeight}) => TextStyle(
@@ -27,7 +28,8 @@ class AppFonts {
         color: color,
       );
 
-  static TextStyle texts({Color? color, double? fontSize}) => GoogleFonts.aBeeZee(
+  static TextStyle texts({Color? color, double? fontSize}) =>
+      GoogleFonts.playfair(
         fontSize: fontSize ?? 15,
         fontWeight: FontWeight.normal,
         color: color,
